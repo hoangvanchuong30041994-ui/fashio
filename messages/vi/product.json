@@ -1,0 +1,42 @@
+{
+  "list": {
+    "metaTitle": "Sản phẩm | Fashio",
+    "metaDescription": "Khám phá các thiết kế thời trang, streetwear và phụ kiện được tuyển chọn bởi Fashio.",
+    "backHome": "Về trang chủ",
+    "badge": "Mua sắm tuyển chọn",
+    "title": "Những thiết kế mới cho mùa này",
+    "description": "Khám phá các item linh hoạt cho tủ đồ hiện đại, từ trang phục tối giản đến phụ kiện tạo điểm nhấn.",
+    "searchPlaceholder": "Tìm sản phẩm",
+    "search": "Tìm kiếm",
+    "allCategories": "Tất cả danh mục",
+    "resultCount": "{count, plural, =0 {Không có sản phẩm} =1 {1 sản phẩm} other {# sản phẩm}}",
+    "clearFilters": "Xóa bộ lọc",
+    "empty": "Không có sản phẩm phù hợp. Hãy thử từ khóa hoặc danh mục khác."
+  },
+  "detail": {
+    "backToProducts": "Quay lại sản phẩm",
+    "price": "Giá",
+    "stock": "Tồn kho",
+    "variants": "Phiên bản",
+    "size": "Kích cỡ",
+    "color": "Màu sắc",
+    "selectedVariant": "Phiên bản đã chọn",
+    "stockSuffix": "còn hàng",
+    "outOfStock": "Hết hàng",
+    "comingSoon": "Tổ hợp này hiện chưa có sẵn.",
+    "quantity": "Số lượng",
+    "addToCart": "Thêm vào giỏ hàng",
+    "addedToCart": "Đã thêm vào giỏ hàng.",
+    "viewCart": "Xem giỏ hàng",
+    "invalidVariant": "Vui lòng chọn biến thể còn hàng.",
+    "unknownError": "Chưa thể cập nhật giỏ hàng. Vui lòng thử lại.",
+    "cartComingSoon": "Thanh toán sẽ được triển khai ở bước tiếp theo. Hiện tại bạn có thể thêm sản phẩm vào giỏ và xem lại."
+  },
+  "collection": {
+    "metaTitle": "{name} | Fashio",
+    "metaDescription": "Khám phá bộ sưu tập này của Fashio.",
+    "backToProducts": "Quay lại sản phẩm",
+    "badge": "Bộ sưu tập",
+    "empty": "Bộ sưu tập này chưa có sản phẩm đang bán."
+  }
+}

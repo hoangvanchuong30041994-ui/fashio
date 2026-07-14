@@ -1,0 +1,72 @@
+{
+  "checkout": {
+    "metaTitle": "Thanh toán | Fashio",
+    "metaDescription": "Nhập thông tin giao hàng và đặt đơn hàng Fashio.",
+    "backToCart": "Quay lại giỏ hàng",
+    "badge": "Thanh toán",
+    "title": "Thông tin giao hàng",
+    "description": "Xác nhận địa chỉ nhận hàng. Đơn hàng sẽ được tạo sau khi hệ thống kiểm tra tồn kho.",
+    "formTitle": "Địa chỉ giao hàng",
+    "name": "Tên người nhận",
+    "phone": "Số điện thoại",
+    "street": "Địa chỉ",
+    "ward": "Phường/xã",
+    "district": "Quận/huyện",
+    "province": "Tỉnh/thành phố",
+    "country": "Quốc gia",
+    "note": "Ghi chú đơn hàng",
+    "submit": "Đặt hàng",
+    "submitting": "Đang đặt hàng...",
+    "summary": "Tóm tắt đơn hàng",
+    "subtotal": "Tạm tính",
+    "total": "Tổng cộng",
+    "emptyTitle": "Giỏ hàng đang trống",
+    "emptyDescription": "Hãy thêm sản phẩm vào giỏ trước khi thanh toán.",
+    "shopProducts": "Mua sắm sản phẩm",
+    "errors": {
+      "invalidInput": "Vui lòng kiểm tra lại thông tin giao hàng.",
+      "emptyCart": "Giỏ hàng của bạn đang trống.",
+      "outOfStock": "Một số sản phẩm không còn đủ số lượng yêu cầu.",
+      "unauthorized": "Vui lòng đăng nhập trước khi thanh toán.",
+      "unknown": "Chưa thể tạo đơn hàng. Vui lòng thử lại."
+    }
+  },
+  "list": {
+    "metaTitle": "Đơn hàng | Fashio",
+    "metaDescription": "Xem lịch sử đơn hàng Fashio của bạn.",
+    "continueShopping": "Tiếp tục mua sắm",
+    "badge": "Đơn hàng",
+    "title": "Lịch sử đơn hàng",
+    "description": "Theo dõi các đơn hàng đã đặt và xem chi tiết mua hàng.",
+    "itemCount": "{count, plural, =1 {1 sản phẩm} other {# sản phẩm}}",
+    "emptyTitle": "Chưa có đơn hàng",
+    "emptyDescription": "Các đơn hàng hoàn tất sẽ xuất hiện tại đây sau khi thanh toán.",
+    "status": {
+      "PENDING": "Đang chờ",
+      "CONFIRMED": "Đã xác nhận",
+      "PROCESSING": "Đang xử lý",
+      "SHIPPED": "Đang giao",
+      "DELIVERED": "Đã giao",
+      "CANCELLED": "Đã hủy",
+      "REFUNDED": "Đã hoàn tiền"
+    }
+  },
+  "detail": {
+    "metaTitle": "Đơn hàng #{id} | Fashio",
+    "metaDescription": "Xem chi tiết đơn hàng Fashio của bạn.",
+    "backToOrders": "Quay lại đơn hàng",
+    "badge": "Chi tiết đơn hàng",
+    "summary": "Thông tin giao hàng",
+    "note": "Ghi chú đơn hàng",
+    "total": "Tổng cộng",
+    "status": {
+      "PENDING": "Đang chờ",
+      "CONFIRMED": "Đã xác nhận",
+      "PROCESSING": "Đang xử lý",
+      "SHIPPED": "Đang giao",
+      "DELIVERED": "Đã giao",
+      "CANCELLED": "Đã hủy",
+      "REFUNDED": "Đã hoàn tiền"
+    }
+  }
+}

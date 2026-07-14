@@ -1,0 +1,21 @@
+{
+  "metaTitle": "Cart | Fashio",
+  "metaDescription": "Review the products in your Fashio shopping cart.",
+  "continueShopping": "Continue shopping",
+  "badge": "Shopping cart",
+  "title": "Your cart",
+  "description": "Review your selected variants before checkout. Checkout will be connected in the next phase.",
+  "quantity": "Quantity",
+  "update": "Update",
+  "remove": "Remove",
+  "stock": "available",
+  "summary": "Order summary",
+  "subtotal": "Subtotal",
+  "shipping": "Shipping",
+  "total": "Total",
+  "checkout": "Checkout",
+  "clear": "Clear cart",
+  "emptyTitle": "Your cart is empty",
+  "emptyDescription": "Start with curated essentials, then come back here to review your selected items.",
+  "shopProducts": "Shop products"
+}

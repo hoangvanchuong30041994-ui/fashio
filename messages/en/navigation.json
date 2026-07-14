@@ -1,0 +1,15 @@
+{
+  "brand": "Fashio",
+  "home": "Home",
+  "products": "Products",
+  "cart": "Cart",
+  "orders": "Orders",
+  "collections": "Collections",
+  "about": "About",
+  "contact": "Contact",
+  "signIn": "Sign in",
+  "signUp": "Sign up",
+  "account": "Account",
+  "signedInAs": "Signed in as",
+  "signOut": "Sign out"
+}

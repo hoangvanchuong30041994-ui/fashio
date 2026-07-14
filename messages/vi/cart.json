@@ -1,0 +1,21 @@
+{
+  "metaTitle": "Giỏ hàng | Fashio",
+  "metaDescription": "Xem lại các sản phẩm trong giỏ hàng Fashio của bạn.",
+  "continueShopping": "Tiếp tục mua sắm",
+  "badge": "Giỏ hàng",
+  "title": "Giỏ hàng của bạn",
+  "description": "Xem lại các biến thể đã chọn trước khi thanh toán. Checkout sẽ được kết nối ở giai đoạn tiếp theo.",
+  "quantity": "Số lượng",
+  "update": "Cập nhật",
+  "remove": "Xóa",
+  "stock": "còn hàng",
+  "summary": "Tóm tắt đơn hàng",
+  "subtotal": "Tạm tính",
+  "shipping": "Vận chuyển",
+  "total": "Tổng cộng",
+  "checkout": "Thanh toán",
+  "clear": "Xóa giỏ hàng",
+  "emptyTitle": "Giỏ hàng đang trống",
+  "emptyDescription": "Hãy bắt đầu với những thiết kế được tuyển chọn, sau đó quay lại đây để xem các sản phẩm đã chọn.",
+  "shopProducts": "Mua sắm sản phẩm"
+}

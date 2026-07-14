@@ -1,0 +1,42 @@
+{
+  "list": {
+    "metaTitle": "Products | Fashio",
+    "metaDescription": "Explore curated fashion essentials, streetwear, and accessories from Fashio.",
+    "backHome": "Back to home",
+    "badge": "Shop the edit",
+    "title": "New season essentials",
+    "description": "Browse versatile pieces selected for modern wardrobes, from polished staples to statement accessories.",
+    "searchPlaceholder": "Search products",
+    "search": "Search",
+    "allCategories": "All categories",
+    "resultCount": "{count, plural, =0 {No products} =1 {1 product} other {# products}}",
+    "clearFilters": "Clear filters",
+    "empty": "No products matched your filters. Try a different search or category."
+  },
+  "detail": {
+    "backToProducts": "Back to products",
+    "price": "Price",
+    "stock": "Stock",
+    "variants": "Variants",
+    "size": "Size",
+    "color": "Color",
+    "selectedVariant": "Selected variant",
+    "stockSuffix": "available",
+    "outOfStock": "Out of stock",
+    "comingSoon": "This combination is not available yet.",
+    "quantity": "Quantity",
+    "addToCart": "Add to cart",
+    "addedToCart": "Added to cart.",
+    "viewCart": "View cart",
+    "invalidVariant": "Please choose an available variant.",
+    "unknownError": "We could not update your cart. Please try again.",
+    "cartComingSoon": "Checkout is coming next. You can add products to your cart and review them now."
+  },
+  "collection": {
+    "metaTitle": "{name} | Fashio",
+    "metaDescription": "Explore this Fashio collection.",
+    "backToProducts": "Back to products",
+    "badge": "Collection",
+    "empty": "This collection does not have active products yet."
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "carousel": {
+    "previousSlide": "Previous slide",
+    "nextSlide": "Next slide"
+  },
+  "locale": {
+    "vi": "Việt Nam",
+    "en": "United States"
+  }
+}

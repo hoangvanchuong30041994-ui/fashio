@@ -1,0 +1,72 @@
+{
+  "checkout": {
+    "metaTitle": "Checkout | Fashio",
+    "metaDescription": "Enter your shipping details and place your Fashio order.",
+    "backToCart": "Back to cart",
+    "badge": "Checkout",
+    "title": "Shipping details",
+    "description": "Confirm your delivery address. Your order will be created after stock is validated.",
+    "formTitle": "Delivery address",
+    "name": "Recipient name",
+    "phone": "Phone",
+    "street": "Street address",
+    "ward": "Ward",
+    "district": "District",
+    "province": "Province / city",
+    "country": "Country",
+    "note": "Order note",
+    "submit": "Place order",
+    "submitting": "Placing order...",
+    "summary": "Order summary",
+    "subtotal": "Subtotal",
+    "total": "Total",
+    "emptyTitle": "Your cart is empty",
+    "emptyDescription": "Add products to your cart before checkout.",
+    "shopProducts": "Shop products",
+    "errors": {
+      "invalidInput": "Please check your shipping information.",
+      "emptyCart": "Your cart is empty.",
+      "outOfStock": "Some items are no longer available in the requested quantity.",
+      "unauthorized": "Please sign in before checkout.",
+      "unknown": "We could not place your order. Please try again."
+    }
+  },
+  "list": {
+    "metaTitle": "Orders | Fashio",
+    "metaDescription": "Review your Fashio order history.",
+    "continueShopping": "Continue shopping",
+    "badge": "Orders",
+    "title": "Order history",
+    "description": "Track previous purchases and review order details.",
+    "itemCount": "{count, plural, =1 {1 item} other {# items}}",
+    "emptyTitle": "No orders yet",
+    "emptyDescription": "Your completed orders will appear here after checkout.",
+    "status": {
+      "PENDING": "Pending",
+      "CONFIRMED": "Confirmed",
+      "PROCESSING": "Processing",
+      "SHIPPED": "Shipped",
+      "DELIVERED": "Delivered",
+      "CANCELLED": "Cancelled",
+      "REFUNDED": "Refunded"
+    }
+  },
+  "detail": {
+    "metaTitle": "Order #{id} | Fashio",
+    "metaDescription": "Review your Fashio order details.",
+    "backToOrders": "Back to orders",
+    "badge": "Order detail",
+    "summary": "Delivery summary",
+    "note": "Order note",
+    "total": "Total",
+    "status": {
+      "PENDING": "Pending",
+      "CONFIRMED": "Confirmed",
+      "PROCESSING": "Processing",
+      "SHIPPED": "Shipped",
+      "DELIVERED": "Delivered",
+      "CANCELLED": "Cancelled",
+      "REFUNDED": "Refunded"
+    }
+  }
+}
