@@ -98,8 +98,8 @@ export function LoginForm({ verificationError }: LoginFormProps) {
         <OAuthButtons
           oauthLoading={oauthLoading}
           isSubmitting={isSubmitting}
-          onGoogleLogin={handleGoogleLogin}
-          onGithubLogin={handleGithubLogin}
+          onGoogleLoginAction={handleGoogleLogin}
+          onGithubLoginAction={handleGithubLogin}
         />
 
         <AuthDivider label={t('signIn.divider')} />

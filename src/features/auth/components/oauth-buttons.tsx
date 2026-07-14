@@ -9,15 +9,15 @@ import { GithubIcon } from '@/components/icons/github-icon';
 type OAuthButtonsProps = {
   oauthLoading: string | null;
   isSubmitting: boolean;
-  onGoogleLogin: () => void;
-  onGithubLogin: () => void;
+  onGoogleLoginAction: () => void;
+  onGithubLoginAction: () => void;
 };
 
 export function OAuthButtons({
   oauthLoading,
   isSubmitting,
-  onGoogleLogin,
-  onGithubLogin,
+  onGoogleLoginAction,
+  onGithubLoginAction,
 }: OAuthButtonsProps) {
   const t = useTranslations('Auth');
 
@@ -29,7 +29,7 @@ export function OAuthButtons({
         size="lg"
         className="h-12 w-full rounded-2xl text-sm font-medium"
         disabled={oauthLoading === 'google' || isSubmitting}
-        onClick={onGoogleLogin}
+        onClick={onGoogleLoginAction}
       >
         {oauthLoading === 'google' ? (
           <Spinner />
@@ -47,7 +47,7 @@ export function OAuthButtons({
         size="lg"
         className="h-12 w-full rounded-2xl text-sm font-medium"
         disabled={oauthLoading === 'github' || isSubmitting}
-        onClick={onGithubLogin}
+        onClick={onGithubLoginAction}
       >
         {oauthLoading === 'github' ? (
           <Spinner />
