@@ -80,6 +80,9 @@ Configure the required environment variables before running the application:
 - `GITHUB_CLIENT_SECRET`
 - `RESEND_API_KEY`
 - `EMAIL_FROM`
+- `UPSTASH_REDIS_REST_URL`
+- `UPSTASH_REDIS_REST_TOKEN`
+- `AUTH_RATE_LIMIT_SECRET`
 
 See [`.ai/architecture.md`](.ai/architecture.md) for the documented environment-variable inventory.
 

@@ -140,6 +140,7 @@ Repository source code remains the highest source of truth. Documentation is use
 | D-055 | Authentication and authorization decisions are server-side concerns | Implemented | `src/features/auth/server/session.ts`, `src/features/auth/server/require-auth.ts`, `src/features/auth/server/require-guest.ts` | `src/features/auth` | High | 2026-07-09 | — |
 | D-056 | Secrets and provider credentials are supplied through environment variables rather than hardcoded values | Implemented | `src/features/auth/server/auth.ts`, `src/shared/lib/prisma.ts` | Repository Root | High | 2026-07-09 | — |
 | D-057 | Better Auth core table naming must remain unchanged | Implemented | `prisma/schema.prisma` | `prisma` | High | 2026-07-09 | — |
+| D-070 | Public email/password auth Server Actions are rate limited with Upstash Redis by hashed IP and email identifiers | Implemented | `src/features/auth/server/rate-limit.ts`, `src/features/auth/actions/sign-in.ts`, `src/features/auth/actions/sign-up.ts`, `src/features/auth/actions/resend-verification-email.ts` | `src/features/auth` | High | 2026-07-15 | — |
 
 ## Internationalization
 

@@ -10,6 +10,7 @@ export const AUTH_ERROR_CODES = {
   passwordMismatch: 'PASSWORD_MISMATCH',
   invalidCredentials: 'INVALID_CREDENTIALS',
   emailNotVerified: 'EMAIL_NOT_VERIFIED',
+  tooManyAttempts: 'TOO_MANY_ATTEMPTS',
   unknown: 'UNKNOWN_ERROR',
 } as const;
 

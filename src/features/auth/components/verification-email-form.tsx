@@ -13,7 +13,9 @@ export function VerificationEmailForm() {
   const locale = useLocale() as Locale;
   const t = useTranslations('Auth.verifyEmail');
   const [email, setEmail] = useState('');
-  const [status, setStatus] = useState<'idle' | 'sent' | 'invalidEmail' | 'error'>('idle');
+  const [status, setStatus] = useState<'idle' | 'sent' | 'invalidEmail' | 'rateLimited' | 'error'>(
+    'idle',
+  );
   const [isPending, setIsPending] = useState(false);
   const [cooldown, setCooldown] = useState(0);
 
@@ -42,7 +44,13 @@ export function VerificationEmailForm() {
         return;
       }
 
-      setStatus(result.code === 'invalidEmail' ? 'invalidEmail' : 'error');
+      setStatus(
+        result.code === 'invalidEmail'
+          ? 'invalidEmail'
+          : result.code === 'rateLimited'
+            ? 'rateLimited'
+            : 'error',
+      );
     } catch {
       setStatus('error');
     } finally {
@@ -82,6 +90,7 @@ export function VerificationEmailForm() {
             {t('resendSuccess')}
           </p>
         ) : null}
+        {status === 'rateLimited' ? <FieldError>{t('rateLimited')}</FieldError> : null}
         {status === 'error' ? <FieldError>{t('resendError')}</FieldError> : null}
       </div>
 

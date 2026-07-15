@@ -1,10 +1,11 @@
 'use server';
 
 import { redirect } from '@/i18n/navigation';
-import { type AuthErrorCode } from '@/auth/constants/auth-error-codes';
+import { AUTH_ERROR_CODES, type AuthErrorCode } from '@/auth/constants/auth-error-codes';
 import { AUTH_ROUTES } from '@/auth/constants/auth-routes';
 import { registerSchema } from '@/auth/schemas/register.schema';
 import { authService } from '@/auth/services/auth.service';
+import { isAuthRateLimitExceeded } from '@/auth/server/rate-limit';
 import type { AuthActionState } from '@/auth/types/auth-action-state';
 import type { Locale } from '@/i18n/routing';
 
@@ -28,6 +29,14 @@ export async function signUpAction(
         string,
         AuthErrorCode[] | undefined
       >,
+    };
+  }
+
+  if (await isAuthRateLimitExceeded('sign-up', parsed.data.email)) {
+    return {
+      ok: false,
+      formError: AUTH_ERROR_CODES.tooManyAttempts,
+      fieldErrors: {},
     };
   }
 

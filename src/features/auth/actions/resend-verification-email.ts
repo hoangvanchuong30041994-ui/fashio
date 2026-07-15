@@ -2,11 +2,12 @@
 
 import { emailSchema } from '@/auth/schemas/auth-field-schemas';
 import { authService } from '@/auth/services/auth.service';
+import { isAuthRateLimitExceeded } from '@/auth/server/rate-limit';
 import type { Locale } from '@/i18n/routing';
 
 export type ResendVerificationEmailState = {
   ok: boolean;
-  code?: 'sent' | 'invalidEmail' | 'unknown';
+  code?: 'sent' | 'invalidEmail' | 'rateLimited' | 'unknown';
 };
 
 export async function resendVerificationEmailAction(
@@ -17,6 +18,10 @@ export async function resendVerificationEmailAction(
 
   if (!parsed.success) {
     return { ok: false, code: 'invalidEmail' };
+  }
+
+  if (await isAuthRateLimitExceeded('verification-email', parsed.data)) {
+    return { ok: false, code: 'rateLimited' };
   }
 
   const result = await authService.sendVerificationEmail(parsed.data, locale);

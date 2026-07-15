@@ -311,7 +311,7 @@ Auth is **not** enforced in `src/proxy.ts` — only page-level guards.
 | Cookie plugin  | `nextCookies()`                                     |
 | Providers      | Verified email/password, Google OAuth, GitHub OAuth |
 
-**Documented environment variables:** `DATABASE_URL`, `DIRECT_URL`, `NEXT_PUBLIC_APP_URL`, `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET`, `GITHUB_CLIENT_ID`, `GITHUB_CLIENT_SECRET`, `RESEND_API_KEY`, `EMAIL_FROM`.
+**Documented environment variables:** `DATABASE_URL`, `DIRECT_URL`, `NEXT_PUBLIC_APP_URL`, `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET`, `GITHUB_CLIENT_ID`, `GITHUB_CLIENT_SECRET`, `RESEND_API_KEY`, `EMAIL_FROM`, `UPSTASH_REDIS_REST_URL`, `UPSTASH_REDIS_REST_TOKEN`, `AUTH_RATE_LIMIT_SECRET`.
 
 ### Session — Implemented (server-first)
 
@@ -344,6 +344,7 @@ LoginForm/RegisterForm (client)
   → useAuthFormSubmit / handleSubmit
   → signInAction / signUpAction (server action)
   → Zod validation
+  → Upstash Redis rate limit
   → authService.signIn / signUp
   → auth.api.signInEmail / signUpEmail
   → Resend verification email after sign-up
@@ -372,6 +373,7 @@ LoginForm/RegisterForm (client)
 | Email verification (Resend)       | Implemented                                |
 | OAuth (Google, GitHub)            | Implemented                                |
 | Sign-out                          | Implemented                                |
+| Server Action rate limiting        | Implemented (Upstash Redis)                |
 | Server session lookup             | Implemented                                |
 | Header user display               | Implemented (server `getCurrentUser`)      |
 | Guest route redirect              | Implemented (`requireGuest` on auth pages) |
